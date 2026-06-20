@@ -1,0 +1,53 @@
+Reconciliation is the process of comparing the actual state of a system with the expected state and fixing any inconsistencies.
+
+Example
+
+Imagine a payment system:
+
+User pays ₹1000.
+Payment service marks payment as successful.
+Due to a failure, the Order service never receives the success event.
+Now:
+Payment DB → Paid ✅
+Order DB → Unpaid ❌
+
+A reconciliation job runs later:
+
+Finds the mismatch.
+Updates the Order service.
+Both systems become consistent.
+Why Use It?
+
+Distributed systems can experience:
+
+Network failures
+Service crashes
+Lost messages
+Partial updates
+
+Reconciliation helps detect and repair these issues.
+
+Real-world Examples
+Payment and Order systems
+Bank account settlements
+Inventory synchronization
+CDC pipelines
+Data replication systems
+Common Reconciliation Methods
+Periodic batch jobs
+Event replay
+Database comparison
+Audit logs
+Merkle trees (large distributed databases)
+Related Concepts
+Trust But Verify
+Eventual Consistency
+CDC
+Idempotency
+Replication
+Tradeoff
+Improves correctness.
+Additional processing and operational complexity.
+Interview One-Liner
+
+"Reconciliation is the process of detecting and repairing inconsistencies between distributed systems to achieve eventual correctness."

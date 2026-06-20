@@ -1,0 +1,29 @@
+Eventual Consistency is a consistency model where all replicas may temporarily have different data, but if no new updates occur, they will eventually converge to the same value.
+
+Example
+
+Suppose a user updates their profile photo:
+
+Write goes to Replica A.
+Replica B and Replica C are updated asynchronously.
+For a short time:
+Replica A → New photo
+Replica B → Old photo
+Replica C → Old photo
+After replication completes:
+All replicas show the new photo.
+
+This temporary inconsistency is acceptable in many large-scale systems.
+
+Real-world Examples
+Social media feeds
+DNS
+Amazon DynamoDB (configurable)
+Cassandra
+Shopping cart systems
+Why Use It?
+Higher availability
+Better scalability
+Lower latency
+Tradeoff
+Users may temporarily see stale data.

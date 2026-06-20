@@ -1,0 +1,41 @@
+Trust But Verify is a distributed systems principle where a system assumes an operation succeeded initially, but later performs checks to verify correctness and reconcile any inconsistencies.
+
+Example
+
+Suppose an e-commerce service publishes an order event to Kafka.
+
+Order Service sends the event.
+It assumes the event was delivered successfully.
+Later, a reconciliation job checks:
+Was the event actually processed?
+Was the order stored correctly?
+If something is missing, the system repairs it.
+Why Use It?
+
+In large distributed systems:
+
+Network failures happen.
+Messages can be lost.
+Services can crash.
+Perfect synchronization is expensive.
+
+Instead of blocking everything for confirmation, systems proceed and verify later.
+
+Real-world Examples
+Payment processing systems
+Event-driven architectures
+CDC pipelines
+Inventory synchronization
+Data replication systems
+Related Concepts
+Reconciliation
+Eventual Consistency
+Retries
+Idempotency
+Outbox Pattern
+Tradeoff
+Faster and more scalable systems.
+Requires background verification and repair mechanisms.
+Interview One-Liner
+
+"Trust But Verify means proceeding optimistically and later validating that the system reached the correct state, repairing inconsistencies if necessary."

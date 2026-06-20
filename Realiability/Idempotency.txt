@@ -1,0 +1,29 @@
+Idempotency means performing the same operation multiple times produces the same result as performing it once.
+
+Example
+
+A payment request:
+
+POST /payments
+Idempotency-Key: abc123
+
+If the client retries due to a network timeout:
+
+First request → Payment processed.
+Second request (same idempotency key) → Returns the previous result, does not charge again.
+Why Use It?
+Prevent duplicate operations.
+Handle retries safely.
+Improve fault tolerance in distributed systems.
+Real-world Examples
+Payment systems (Stripe, PayPal, Razorpay)
+Order creation
+API request retries
+Tradeoff
+Requires storing idempotency keys and previous responses.
+Additional storage and cleanup logic.
+Interview Keywords
+Retry
+Duplicate Requests
+Exactly Once Processing
+Fault Tolerance
