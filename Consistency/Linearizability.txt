@@ -1,0 +1,50 @@
+Linearizability is a strong consistency guarantee where every operation appears to happen instantaneously at a single point in time, and all clients observe operations in the same order.
+
+Example
+
+Suppose a bank account balance is ₹1000.
+
+User A deposits ₹500.
+User B immediately checks balance.
+
+With Linearizability:
+
+Deposit completes
+      ↓
+Balance read = ₹1500
+
+User B can never see the old balance (₹1000) after the deposit has been acknowledged.
+
+Why Use It?
+
+Ensures:
+
+No stale reads
+Single correct view of data
+Strong consistency across clients
+Real-world Examples
+Bank account balances
+Distributed locks
+Leader election systems
+Metadata services
+ZooKeeper
+etcd
+Tradeoff
+
+Pros:
+
+Strong correctness guarantees
+
+Cons:
+
+Higher latency
+Lower availability during failures
+More coordination between nodes
+Related Concepts
+Strong Consistency
+Eventual Consistency
+Consensus (Raft/Paxos)
+Quorum Reads/Writes
+Interview One-Liner
+
+"Linearizability guarantees that once a write completes, all future reads see that write, making operations appear as if they occurred in a single global order."
