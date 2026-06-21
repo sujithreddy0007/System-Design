@@ -1,0 +1,75 @@
+Rate Limiting is a mechanism that restricts how many requests a user, client, or service can make within a specific time period.
+
+Example
+
+Suppose an API allows:
+
+100 requests / minute
+
+If a user sends:
+
+Request 1 ✓
+Request 2 ✓
+...
+Request 100 ✓
+Request 101 ✗ (429 Too Many Requests)
+
+The extra requests are rejected or delayed.
+
+Why Use It?
+Prevent abuse
+Prevent DDoS attacks
+Protect backend services
+Ensure fair resource usage
+Control costs
+Common Algorithms
+Fixed Window
+100 requests/minute
+
+Simple but can cause bursts at window boundaries.
+
+Sliding Window
+
+Tracks requests continuously over time.
+
+More accurate but slightly expensive.
+
+Token Bucket
+Bucket Capacity = 100
+Refill Rate = 10/sec
+
+Allows short bursts while maintaining limits.
+
+Leaky Bucket
+
+Processes requests at a constant rate.
+
+Smooths traffic spikes.
+
+Real-world Examples
+API Gateways
+Login APIs
+Payment APIs
+ChatGPT APIs
+Cloudflare
+AWS API Gateway
+Related Concepts
+DDoS Protection
+API Gateway
+Authentication
+Throttling
+Backpressure
+Tradeoff
+
+Pros:
+
+Protects services
+Improves stability
+
+Cons:
+
+Additional infrastructure
+May block legitimate traffic if configured poorly
+Interview One-Liner
+
+"Rate limiting controls the number of requests a client can make within a given time period to protect system resources and ensure fair usage."
