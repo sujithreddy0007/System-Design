@@ -1,0 +1,53 @@
+Change Data Capture (CDC) is a technique used to detect and capture changes (INSERT, UPDATE, DELETE) made to a database and propagate them to other systems.
+
+Example
+User updates profile
+        ↓
+Database row changes
+        ↓
+CDC detects change
+        ↓
+Event sent to Kafka
+        ↓
+Other services update themselves
+Why Use It?
+Keep systems synchronized
+Build event-driven architectures
+Replicate data in near real-time
+Avoid expensive database polling
+Real-world Examples
+MySQL → Kafka
+PostgreSQL → Kafka
+Database → Search Index (Elasticsearch)
+Database → Data Warehouse
+Microservice synchronization
+Common CDC Approaches
+Trigger-based CDC
+Timestamp-based CDC
+Transaction Log-based CDC (most common)
+
+Examples:
+
+Debezium
+Maxwell
+AWS DMS
+Related Concepts
+Kafka
+Event-Driven Architecture
+Event Sourcing
+Reconciliation
+Outbox Pattern
+Tradeoff
+
+Pros:
+
+Near real-time updates
+Loose coupling
+
+Cons:
+
+Operational complexity
+Event ordering concerns
+Interview One-Liner
+
+"CDC captures database changes and publishes them to downstream systems, enabling real-time data synchronization."
