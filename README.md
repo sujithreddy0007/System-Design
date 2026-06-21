@@ -5,3 +5,5 @@
     # Idempotency
     # trust but verify
     # Reconsilation
+### 3. Security
+    # JWT

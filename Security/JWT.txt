@@ -1,0 +1,59 @@
+JWT (JSON Web Token) is a compact, signed token used to securely transmit user identity and claims between parties.
+
+Example Flow
+User Login
+    ↓
+Server verifies credentials
+    ↓
+Server generates JWT
+    ↓
+Client stores JWT
+    ↓
+Client sends JWT with every request
+    ↓
+Server validates JWT
+    ↓
+Access granted
+JWT Structure
+Header.Payload.Signature
+
+Example:
+
+eyJhbGciOiJIUzI1NiIs...
+
+Contains:
+
+Header → Algorithm information
+Payload → User data (claims)
+Signature → Prevents tampering
+Why Use It?
+Stateless authentication
+Scalable for distributed systems
+No server-side session storage required
+Real-world Examples
+REST APIs
+Microservices
+OAuth/OpenID Connect
+Mobile applications
+Related Concepts
+Authentication
+Authorization
+OAuth 2.0
+API Gateway
+Session Management
+Tradeoff
+
+Pros:
+
+Stateless
+Easy to scale
+Works well across services
+
+Cons:
+
+Hard to revoke before expiration
+Larger than session IDs
+Payload is encoded, not encrypted
+Interview One-Liner
+
+"JWT is a signed token that carries user identity and claims, enabling stateless authentication across distributed systems."
