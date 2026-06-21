@@ -8,3 +8,6 @@
 ### 3. Security
     # JWT
     # Rate limiting
+### 4. Networking
+    # HTTP status codes
+    
