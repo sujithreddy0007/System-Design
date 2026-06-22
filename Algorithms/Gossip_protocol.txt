@@ -1,0 +1,44 @@
+Gossip Protocol
+Definition
+
+Gossip Protocol is a communication algorithm where nodes periodically exchange information with a few random nodes, causing information to spread throughout the system similar to how rumors spread among people.
+
+How It Works
+A node receives new information.
+It randomly selects a few peers.
+It shares the information with them.
+Those peers repeat the process.
+Node A
+ ↓
+Node B, Node C
+ ↓
+Node D, Node E, Node F
+ ↓
+Eventually all nodes know
+Why Use It?
+Efficient information dissemination
+Decentralized communication
+Fault tolerant
+Scales to large clusters
+Common Uses
+Service discovery
+Membership management
+Failure detection
+Distributed databases
+Cluster state synchronization
+Real-World Examples
+Cassandra
+Dynamo
+Consul
+Akka Cluster
+Advantages
+Highly scalable
+No central coordinator
+Resilient to failures
+Disadvantages
+Temporary inconsistencies
+Extra network traffic
+No immediate consistency guarantee
+Interview One-Liner
+
+Gossip Protocol spreads information by having nodes periodically exchange data with randomly selected peers, enabling scalable and fault-tolerant cluster communication.

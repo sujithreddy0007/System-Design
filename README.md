@@ -14,3 +14,4 @@
     # Change data capture
 ### 6. Algorithms
     # Consistent Hashing
+    # Gossip Protocol
