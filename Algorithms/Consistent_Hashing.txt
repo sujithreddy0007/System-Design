@@ -1,0 +1,52 @@
+Consistent Hashing
+Definition
+
+Consistent Hashing is a partitioning algorithm that distributes data across servers while minimizing data movement when servers are added or removed.
+
+Problem with Traditional Hashing
+server = hash(key) % N
+
+When N changes (server added/removed), most keys get remapped, causing expensive data migration.
+
+How It Works
+Hash servers and place them on a logical ring.
+Hash keys and place them on the same ring.
+A key is assigned to the first server encountered in the clockwise direction.
+Key → Clockwise → Server
+Server Addition
+
+When a new server joins, only a small subset of keys move from its successor server.
+
+Server Removal
+
+When a server leaves, its keys move to the next server on the ring.
+
+Virtual Nodes (vNodes)
+
+Instead of placing each server once on the ring:
+
+Server A → A1, A2, A3
+Server B → B1, B2, B3
+
+Each physical server is represented by multiple virtual nodes.
+
+Benefits:
+Better load balancing
+More even key distribution
+Easier scaling
+Supports servers with different capacities
+Advantages
+Minimal rebalancing
+High scalability
+Fault tolerant
+Better load distribution
+
+Real-World Usage
+Cassandra
+DynamoDB
+Redis Cluster
+Distributed Caches
+CDNs
+Interview One-Liner
+
+Consistent Hashing maps servers and keys onto a hash ring, ensuring only a small portion of data moves when nodes are added or removed. Virtual nodes improve load balancing by representing each server multiple times on the ring.
