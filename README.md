@@ -13,3 +13,4 @@
 ### 5. Messaging
     # Change data capture
 ### 6. Algorithms
+    # Consistent Hashing
