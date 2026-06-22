@@ -12,3 +12,4 @@
     # HTTP status codes
 ### 5. Messaging
     # Change data capture
+### 6. Algorithms
