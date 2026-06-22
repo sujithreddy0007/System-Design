@@ -1,0 +1,77 @@
+Snowflake ID
+Definition
+
+Snowflake is a distributed unique ID generation algorithm developed by Twitter that generates 64-bit numeric, unique, and time-sortable IDs without requiring coordination between servers.
+
+Why Not UUID?
+
+UUID has some drawbacks:
+
+128 bits (requirement is often 64 bits)
+Not naturally sortable by time
+Larger storage overhead
+
+Snowflake solves these issues.
+
+64-bit Structure
+| 1 Bit | 41 Bits | 5 Bits | 5 Bits | 12 Bits |
+|--------|---------|---------|---------|---------|
+| Sign   | Timestamp | DC ID | Machine ID | Sequence |
+Sign Bit (1 bit)
+
+Always 0.
+
+Timestamp (41 bits)
+
+Milliseconds since a custom epoch.
+
+41 bits ≈ 69 years
+
+Makes IDs sortable by creation time.
+
+Datacenter ID (5 bits)
+2^5 = 32 datacenters
+Machine ID (5 bits)
+2^5 = 32 machines/datacenter
+Sequence Number (12 bits)
+2^12 = 4096 IDs/ms
+
+Resets every millisecond.
+
+Example
+Timestamp   : 1680000000000
+DC ID       : 3
+Machine ID  : 12
+Sequence    : 25
+
+Combined into a unique 64-bit ID.
+
+Advantages
+Globally unique IDs
+Time ordered
+Numeric only
+No centralized server
+Highly scalable
+Very low latency
+Limitations
+Depends on clock synchronization
+Clock moving backwards can create issues
+Limited by bit allocation choices
+Capacity
+
+Per machine:
+
+4096 IDs/ms
+
+Approximately:
+
+4.1 million IDs/sec
+Real-World Usage
+Twitter
+Distributed databases
+URL Shorteners
+Order IDs
+Payment systems
+Interview One-Liner
+
+Snowflake generates unique 64-bit IDs by combining timestamp, datacenter ID, machine ID, and sequence number, producing scalable and time-sortable identifiers without centralized coordination.

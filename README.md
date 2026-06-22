@@ -15,3 +15,4 @@
 ### 6. Algorithms
     # Consistent Hashing
     # Gossip Protocol
+    # Snow Flake ID
