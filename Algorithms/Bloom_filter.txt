@@ -1,0 +1,56 @@
+Definition
+
+A Bloom Filter is a space-efficient probabilistic data structure used to check whether an element is possibly present or definitely not present in a set.
+
+How It Works
+Create a bit array.
+Apply multiple hash functions to an item.
+Set the corresponding bits to 1.
+To check existence:
+If any bit is 0 → Definitely Not Present
+If all bits are 1 → Possibly Present
+Definitely Not Present ✅
+Possibly Present ⚠️
+Key Property
+
+Bloom Filters can have:
+
+False Positives  → Yes
+False Negatives  → No
+
+Example:
+
+Says present
+→ Might be wrong
+
+Says not present
+→ Always correct
+Why Use It?
+
+Avoid expensive database or cache lookups.
+
+Request
+   ↓
+Bloom Filter
+   ↓
+Not Present
+   ↓
+Skip DB Query
+Advantages
+Very memory efficient
+Fast lookups (O(k))
+Reduces database load
+Limitations
+False positives possible
+Cannot retrieve stored values
+Deletion is difficult (requires Counting Bloom Filter)
+Real-World Usage
+Redis
+Cassandra
+BigTable
+HBase
+Web crawlers
+Cache penetration protection
+Interview One-Liner
+
+A Bloom Filter is a memory-efficient probabilistic data structure that quickly determines whether an element is definitely absent or possibly present in a set.
