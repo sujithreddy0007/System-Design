@@ -1,0 +1,88 @@
+Kafka
+Definition
+
+Apache Kafka is a distributed event streaming platform used to publish, store, and process streams of records (events) in real time.
+
+Core Components
+Producer
+
+Sends messages to Kafka.
+
+Order Service
+      ↓
+Producer
+Topic
+
+Logical category where messages are stored.
+
+orders
+payments
+notifications
+Partition
+
+A topic is divided into partitions for scalability.
+
+Orders Topic
+
+Partition 1
+Partition 2
+Partition 3
+Consumer
+
+Reads messages from Kafka.
+
+Kafka
+  ↓
+Inventory Service
+Consumer Group
+
+Multiple consumers share the workload.
+
+How It Works
+Producer
+    ↓
+Kafka Topic
+    ↓
+Consumer
+
+Example:
+
+Order Created
+      ↓
+Kafka
+      ↓
+Payment Service
+Inventory Service
+Notification Service
+Why Use Kafka?
+Decouples services
+High throughput
+Fault tolerant
+Scalable
+Durable message storage
+Key Features
+Event Streaming
+Pub/Sub Messaging
+Message Retention
+Partitioning
+Replication
+Real-World Usage
+Uber
+Netflix
+LinkedIn
+Airbnb
+Payment systems
+CDC pipelines
+Related Concepts
+
+Advantages
+High throughput
+Persistent storage
+Horizontal scalability
+Fault tolerant
+Limitations
+Operational complexity
+Event ordering only guaranteed within a partition
+Interview One-Liner
+
+Kafka is a distributed event streaming platform that enables producers and consumers to exchange high-throughput, durable, and scalable streams of events.

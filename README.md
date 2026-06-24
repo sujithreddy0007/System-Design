@@ -12,6 +12,7 @@
     # HTTP status codes
 ### 5. Messaging
     # Change data capture
+    # Kafka
 ### 6. Algorithms
     # Consistent Hashing
     # Gossip Protocol
