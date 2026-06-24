@@ -13,6 +13,7 @@
 ### 5. Messaging
     # Change data capture
     # Kafka
+    # Rabbit MQ
 ### 6. Algorithms
     # Consistent Hashing
     # Gossip Protocol
