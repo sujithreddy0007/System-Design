@@ -1,0 +1,75 @@
+RabbitMQ
+Definition
+
+RabbitMQ is an open-source message broker that enables applications and services to communicate asynchronously by sending messages through queues.
+
+Core Components
+Producer
+
+Sends messages.
+
+Order Service
+    ↓
+Producer
+Exchange
+
+Receives messages and routes them to queues.
+
+Queue
+
+Stores messages until consumers process them.
+
+Consumer
+
+Reads and processes messages.
+
+How It Works
+Producer
+    ↓
+Exchange
+    ↓
+Queue
+    ↓
+Consumer
+
+Example:
+
+Order Created
+      ↓
+RabbitMQ
+      ↓
+Email Service
+Why Use RabbitMQ?
+Asynchronous communication
+Decouples services
+Reliable message delivery
+Load balancing between consumers
+Key Features
+Message Queues
+Acknowledgements (ACKs)
+Routing
+Retry Mechanisms
+Dead Letter Queues (DLQ)
+Real-World Usage
+Order Processing
+Email Notifications
+Background Jobs
+Payment Processing
+RabbitMQ vs Kafka
+RabbitMQ	Kafka
+Message Broker	Event Streaming Platform
+Queue-based	Log-based
+Lower throughput	Very high throughput
+Best for task processing	Best for event streaming
+Messages removed after consumption	Messages retained
+Advantages
+Easy to use
+Reliable delivery
+Flexible routing
+Strong support for request-response patterns
+Limitations
+Lower throughput than Kafka
+Not ideal for large-scale event streaming
+Interview One-Liner
+
+RabbitMQ is a message broker that routes and delivers messages between producers and consumers using queues, enabling reliable asynchronous communication.
