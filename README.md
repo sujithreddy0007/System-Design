@@ -19,3 +19,5 @@
     # Gossip Protocol
     # Snow Flake ID
     # Bloom Filter
+### 7. Databases
+    # SQL
