@@ -1,0 +1,49 @@
+SQL
+Definition
+
+SQL (Structured Query Language) databases are relational databases that store data in tables with predefined schemas and support ACID transactions.
+
+Characteristics
+Relational (tables with rows and columns)
+Fixed schema
+ACID compliant
+Supports joins
+Uses SQL for querying
+Example
+Users Table
+
++----+---------+------------------+
+| ID | Name    | Email            |
++----+---------+------------------+
+| 1  | Sai     | sai@gmail.com    |
+| 2  | Rahul   | rahul@gmail.com  |
++----+---------+------------------+
+Why Use SQL?
+Strong consistency
+Complex queries
+Transactions
+Referential integrity
+Common SQL Databases
+MySQL
+PostgreSQL
+Oracle Database
+Microsoft SQL Server
+SQLite
+Best Use Cases
+Banking systems
+E-commerce orders
+Payment systems
+Inventory management
+ERP systems
+Advantages
+ACID transactions
+Strong consistency
+Powerful querying with joins
+Mature ecosystem
+Limitations
+Horizontal scaling is more difficult
+Fixed schema
+Less suitable for unstructured data
+Interview One-Liner
+
+SQL databases store structured data in relational tables, providing ACID transactions, strong consistency, and powerful query capabilities.
