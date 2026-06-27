@@ -22,3 +22,4 @@
 ### 7. Databases
     # SQL
     # No SQL
+    # MySQL
