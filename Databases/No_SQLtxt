@@ -1,0 +1,53 @@
+Definition
+
+NoSQL (Not Only SQL) databases are non-relational databases designed to handle large volumes of structured, semi-structured, or unstructured data with high scalability and flexibility.
+
+Characteristics
+Non-relational
+Flexible schema
+Horizontally scalable
+High availability
+Optimized for distributed systems
+Types of NoSQL Databases
+Key-Value (Redis, DynamoDB)
+Document (MongoDB)
+Column-Family (Cassandra, HBase)
+Graph (Neo4j)
+Why Use NoSQL?
+Massive scalability
+Flexible data models
+High write/read throughput
+Suitable for distributed systems
+Common NoSQL Databases
+MongoDB
+Cassandra
+Redis
+DynamoDB
+Neo4j
+HBase
+Best Use Cases
+Social media
+Real-time analytics
+IoT applications
+Caching
+Recommendation systems
+Event logging
+Advantages
+Horizontal scaling
+Flexible schema
+High performance
+Handles large datasets
+Limitations
+Limited joins
+Weaker consistency in some databases
+Complex transactions may not be supported
+SQL vs NoSQL
+SQL	NoSQL
+Relational	Non-relational
+Fixed schema	Flexible schema
+Vertical scaling	Horizontal scaling
+ACID transactions	BASE / Eventual Consistency (varies by database)
+Best for structured data	Best for large-scale, distributed data
+Interview One-Liner
+
+NoSQL databases provide flexible schemas and horizontal scalability, making them ideal for distributed systems and large-scale applications.
