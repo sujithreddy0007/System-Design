@@ -1,0 +1,46 @@
+MySQL
+Definition
+
+MySQL is an open-source relational database management system (RDBMS) that stores data in tables and uses SQL for querying and managing data.
+
+Characteristics
+Relational database
+ACID compliant
+Fixed schema
+Supports joins and transactions
+Uses indexes for fast lookups
+Why Use MySQL?
+Strong consistency
+Reliable transactions
+Mature and widely adopted
+Excellent for structured data
+Common Use Cases
+User management
+E-commerce
+Banking systems
+Inventory management
+Content Management Systems (CMS)
+Advantages
+ACID transactions
+Powerful SQL queries
+Strong data integrity
+Large community and ecosystem
+Limitations
+Horizontal scaling is more challenging
+Less suitable for unstructured data
+Sharding requires additional effort
+Related Concepts
+SQL
+ACID
+Indexing
+Replication
+Sharding
+Partitioning
+Real-World Usage
+Facebook (early architecture)
+YouTube (metadata)
+WordPress
+Shopify
+Interview One-Liner
+
+MySQL is a relational database that provides ACID transactions, strong consistency, and efficient SQL querying, making it ideal for structured and transactional data.
