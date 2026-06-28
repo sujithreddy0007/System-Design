@@ -1,0 +1,46 @@
+PostgreSQL
+Definition
+
+PostgreSQL is an open-source relational database management system (RDBMS) known for its ACID compliance, advanced SQL features, extensibility, and reliability.
+
+Characteristics
+Relational database
+ACID compliant
+Strong consistency
+Advanced SQL support
+Extensible and highly customizable
+Why Use PostgreSQL?
+Complex queries
+Advanced indexing
+Strong data integrity
+Supports JSON in addition to relational data
+Common Use Cases
+Financial systems
+Enterprise applications
+GIS (Geographic Information Systems)
+Analytics
+SaaS applications
+Advantages
+ACID transactions
+Excellent SQL support
+Rich indexing options
+Supports JSON/JSONB
+Highly extensible
+Limitations
+Horizontal scaling is more complex
+Slightly steeper learning curve than MySQL
+Related Concepts
+SQL
+ACID
+Indexing
+Replication
+Partitioning
+JSONB
+Real-World Usage
+Instagram
+Reddit
+Discord
+GitLab
+Interview One-Liner
+
+PostgreSQL is a powerful relational database that provides ACID transactions, advanced SQL features, and JSON support, making it ideal for complex and data-intensive applications.
