@@ -1,0 +1,46 @@
+Redis
+Definition
+
+Redis (Remote Dictionary Server) is an open-source, in-memory NoSQL database that stores data as key-value pairs for extremely fast read and write operations.
+
+Characteristics
+In-memory database
+Key-value store
+Extremely low latency
+Supports persistence
+High throughput
+Why Use Redis?
+Fast caching
+Session storage
+Rate limiting
+Real-time leaderboards
+Pub/Sub messaging
+Common Use Cases
+Cache
+User sessions
+Shopping carts
+Leaderboards
+API rate limiting
+Advantages
+Extremely fast
+In-memory storage
+Simple data model
+Supports replication and clustering
+Limitations
+Limited by available RAM
+Not ideal for complex relational queries
+Data Structures
+Strings
+Lists
+Sets
+Hashes
+Sorted Sets (ZSets)
+Streams
+Real-World Usage
+Twitter
+GitHub
+Stack Overflow
+Shopify
+Interview One-Liner
+
+Redis is an in-memory key-value database used for ultra-fast data access, commonly powering caches, session stores, rate limiters, and real-time applications.
