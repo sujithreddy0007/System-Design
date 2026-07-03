@@ -25,3 +25,4 @@
     # MySQL
     # Postgress
     # Redis
+    # TimeScale DB
