@@ -1,0 +1,42 @@
+Neo4j
+Definition
+
+Neo4j is a graph database that stores data as nodes and relationships, making it ideal for highly connected data.
+
+Characteristics
+Graph database
+Stores Nodes and Relationships
+Flexible schema
+Optimized for graph traversal
+Uses Cypher Query Language (CQL)
+Why Use Neo4j?
+Efficient relationship queries
+Fast graph traversal
+Handles highly connected data
+Common Use Cases
+Social networks
+Recommendation systems
+Fraud detection
+Knowledge graphs
+Network topology
+Data Model
+(Person)-[:FRIEND]->(Person)
+
+(User)-[:PURCHASED]->(Product)
+
+(Customer)-[:TRANSFERRED]->(Bank Account)
+Advantages
+Excellent for connected data
+Fast relationship traversal
+Flexible data model
+Limitations
+Not ideal for transactional or tabular data
+Less suitable for simple CRUD applications
+Real-World Usage
+LinkedIn (professional connections)
+Recommendation engines
+Fraud detection systems
+Network analysis
+Interview One-Liner
+
+Neo4j is a graph database that models data as nodes and relationships, enabling efficient traversal of highly connected datasets.
