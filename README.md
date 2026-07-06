@@ -27,3 +27,4 @@
     # Redis
     # TimeScale DB
     # Neo4j
+    # Elastic Search
