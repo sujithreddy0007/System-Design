@@ -1,0 +1,48 @@
+Elasticsearch
+Definition
+
+Elasticsearch is a distributed search and analytics engine designed for full-text search, real-time data analysis, and fast querying of large datasets.
+
+Characteristics
+Distributed search engine
+Full-text search
+Near real-time indexing
+Horizontally scalable
+RESTful API
+Why Use Elasticsearch?
+Fast text search
+Fuzzy matching
+Log analysis
+Real-time analytics
+Common Use Cases
+Product search
+Log monitoring
+Website search
+Document search
+Analytics dashboards
+How It Works
+Data
+   ↓
+Index
+   ↓
+Elasticsearch
+   ↓
+Search Results
+Advantages
+Extremely fast search
+Full-text search capabilities
+Distributed and scalable
+Supports filtering, aggregations, and analytics
+Limitations
+Not a replacement for relational databases
+Eventual consistency in distributed setups
+Higher memory usage
+Real-World Usage
+Amazon (product search)
+Netflix (content search)
+GitHub (repository search)
+Kibana (log analysis)
+Stack Overflow (search)
+Interview One-Liner
+
+Elasticsearch is a distributed search engine optimized for full-text search and real-time analytics across large datasets.
