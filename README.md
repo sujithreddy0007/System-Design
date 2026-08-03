@@ -19,6 +19,7 @@
     # Gossip Protocol
     # Snow Flake ID
     # Bloom Filter
+    # Bijective Function
 ### 7. Databases
     # SQL
     # No SQL
