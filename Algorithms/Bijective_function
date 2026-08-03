@@ -1,0 +1,48 @@
+Bijective Function
+Definition
+
+A bijective function is a one-to-one and onto mapping where every input maps to exactly one unique output, and every output corresponds to exactly one input.
+
+Properties
+One-to-One (Injective): No two inputs produce the same output.
+Onto (Surjective): Every output has a corresponding input.
+Input  → Output
+
+1      → A
+2      → B
+3      → C
+Why Use It?
+Ensures uniqueness
+Allows reverse mapping
+No collisions
+Common Use Cases
+URL Shorteners (Base62 encoding)
+ID encoding/decoding
+Token generation
+Hash-based mappings
+Advantages
+Unique mapping
+Reversible
+No data loss
+Limitations
+Requires equal-sized input and output sets
+Not suitable when collisions are acceptable (e.g., cryptographic hashes)
+Interview One-Liner
+
+A bijective function creates a one-to-one correspondence between inputs and outputs, ensuring unique and reversible mappings without collisions.
+
+Example
+
+Suppose your database ID is:
+
+125
+
+Using a bijective encoding (such as Base62):
+
+125  →  cb
+
+And it can always be reversed:
+
+cb  → 125
+
+Unlike a hash function, no information is lost.
