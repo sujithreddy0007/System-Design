@@ -10,6 +10,8 @@
     # Rate limiting
 ### 4. Networking
     # HTTP status codes
+    # REST
+    # GraphQL
 ### 5. Messaging
     # Change data capture
     # Kafka
