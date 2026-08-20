@@ -1,0 +1,50 @@
+GraphQL
+Definition
+
+GraphQL is an API query language that allows clients to request exactly the data they need from a server.
+
+Core Concepts
+Query → Read data
+Mutation → Modify data
+Subscription → Real-time updates
+Schema → Defines available data and operations
+Resolver → Fetches the requested data
+Example
+
+Instead of multiple REST requests:
+
+GET /users/123
+GET /users/123/orders
+GET /users/123/profile
+
+GraphQL can request everything in one query:
+
+query {
+  user(id: 123) {
+    name
+    email
+    orders {
+      id
+      amount
+    }
+  }
+}
+Why Use GraphQL?
+Client gets exactly what it needs
+Reduces over-fetching and under-fetching
+Can aggregate data from multiple services
+Useful for complex frontends
+Limitations
+More complex caching
+Query complexity can be difficult to control
+Requires schema and resolver management
+Can introduce N+1 query problems
+REST vs GraphQL
+REST	GraphQL
+Multiple endpoints	Usually single endpoint
+Server defines response	Client defines response
+Simple HTTP caching	More complex caching
+Easier to implement	More flexible
+Interview One-Liner
+
+GraphQL is a query-based API approach where clients specify exactly what data they need through a strongly typed schema.
