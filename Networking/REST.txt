@@ -1,0 +1,24 @@
+REST
+Definition
+
+REST (Representational State Transfer) is an architectural style for designing web APIs where clients interact with resources using standard HTTP methods.
+
+Core Concepts
+Resources → Users, Orders, Products
+HTTP Methods → GET, POST, PUT, PATCH, DELETE
+Statelessness → Each request contains all information needed to process it.
+Representations → Usually JSON
+HTTP Status Codes → 200, 201, 400, 404, 429, 500, etc.
+Example
+GET    /users/123
+POST   /users
+PUT    /users/123
+DELETE /users/123
+Why Use REST?
+Simple and widely supported
+Stateless and scalable
+Uses standard HTTP
+Easy service-to-service communication
+Interview One-Liner
+
+REST is an architectural style for building stateless web APIs around resources using standard HTTP methods and representations.
