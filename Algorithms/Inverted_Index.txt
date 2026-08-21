@@ -1,0 +1,67 @@
+# Inverted Index
+
+### Definition
+An **Inverted Index** is a data structure that maps words or terms to the documents in which they appear, allowing fast full-text search.
+
+### Example
+
+Documents:
+
+Document 1 → "system design"
+Document 2 → "distributed system"
+
+Inverted Index:
+
+system       → [1, 2]
+design       → [1]
+distributed  → [2]
+
+### How It Works
+
+Documents
+    ↓
+Extract words
+    ↓
+Build index
+    ↓
+Word → Document IDs
+    ↓
+Fast search
+
+### Why Use It?
+
+- Enables fast full-text search
+- Avoids scanning every document
+- Efficient for large datasets
+- Supports keyword-based queries
+
+### Common Use Cases
+
+- Search engines
+- Product search
+- Document search
+- Log search
+- Elasticsearch
+
+### Advantages
+
+- Fast keyword lookup
+- Efficient text searching
+- Scales well for large document collections
+
+### Limitations
+
+- Requires additional storage
+- Index must be updated when documents change
+- Adds overhead during writes/indexing
+
+### Real-World Usage
+
+- Elasticsearch
+- Apache Lucene
+- Apache Solr
+- Search engines
+
+### Interview One-Liner
+
+> An Inverted Index maps each term to the documents containing it, allowing fast full-text search without scanning every document.
