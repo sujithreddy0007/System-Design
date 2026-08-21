@@ -1,0 +1,46 @@
+Definition
+
+gRPC (Google Remote Procedure Call) is a high-performance RPC framework that allows services to communicate directly with each other, commonly in microservice architectures.
+
+Key Features
+Uses HTTP/2
+Uses Protocol Buffers (Protobuf) for serialization
+Supports strongly typed APIs
+Supports streaming
+Efficient binary communication
+How It Works
+Client Service
+      ↓
+   gRPC Call
+      ↓
+Server Service
+
+The client calls a remote function as if it were a local function.
+
+getUser(userId)
+Why Use gRPC?
+Low latency
+Smaller messages than JSON
+Strongly typed contracts
+Excellent for service-to-service communication
+Supports bidirectional streaming
+Communication Types
+Unary → Request → Response
+Server Streaming
+Client Streaming
+Bidirectional Streaming
+REST vs gRPC
+REST	gRPC
+Usually JSON	Protobuf
+HTTP/1.1 commonly used	HTTP/2
+Human-readable	Binary
+Simple browser integration	Better for internal services
+Generally more overhead	High performance
+Common Use Cases
+Microservices
+Internal service-to-service communication
+Real-time streaming
+High-throughput systems
+Interview One-Liner
+
+gRPC is a high-performance RPC framework that uses HTTP/2 and Protocol Buffers for efficient, strongly typed communication between services.
