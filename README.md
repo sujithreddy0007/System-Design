@@ -12,6 +12,7 @@
     # HTTP status codes
     # REST
     # GraphQL
+    # Grpc
 ### 5. Messaging
     # Change data capture
     # Kafka
@@ -22,6 +23,8 @@
     # Snow Flake ID
     # Bloom Filter
     # Bijective Function
+    # Geo Hashing (location search)
+    # Inverted Index (Text search)
 ### 7. Databases
     # SQL
     # No SQL
