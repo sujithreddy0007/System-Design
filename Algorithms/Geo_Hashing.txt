@@ -1,0 +1,70 @@
+Geohashing
+Definition
+
+Geohashing is a technique that converts a latitude and longitude into a short string representing a geographic area.
+
+How It Works
+
+The Earth's surface is recursively divided into smaller grid cells. Each cell gets a unique hash string.
+
+World
+  ↓
+Large Grid
+  ↓
+Smaller Grid
+  ↓
+Smaller Grid
+  ↓
+Geohash
+
+Example:
+
+Latitude: 17.385
+Longitude: 78.486
+
+
+        ↓
+
+
+Geohash: "te..."
+Key Property
+
+Nearby locations generally have similar geohash prefixes.
+
+For example:
+
+te7abc
+te7abd
+te7abe
+
+These locations are likely geographically close.
+
+Why Use It?
+
+Instead of calculating distance against every location:
+
+All Drivers
+    ↓
+Geohash nearby cells
+    ↓
+Candidate Drivers
+    ↓
+Exact distance calculation
+
+This greatly reduces the search space.
+
+Use Cases
+Uber / Lyft → Nearby drivers
+Food delivery → Nearby restaurants
+Location-based search
+Maps
+Geospatial databases
+Limitation
+
+Geohash prefixes do not always perfectly represent physical proximity, especially around cell boundaries.
+
+Therefore, systems usually search the target cell and neighboring cells.
+
+Interview One-Liner
+
+Geohashing converts geographic coordinates into hierarchical grid identifiers, allowing efficient proximity searches by comparing geohash prefixes.
