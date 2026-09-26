@@ -34,3 +34,5 @@
     # TimeScale DB
     # Neo4j
     # Elastic Search
+### 8. Distributed Systems
+    # Lua Scripting
