@@ -1,0 +1,68 @@
+# Lua Scripting
+
+### Definition
+
+Lua scripting allows multiple Redis operations to be executed as a **single atomic operation** using a Lua script.
+
+Instead of:
+
+Client → GET → Application Logic → SET → Redis
+
+we can execute the entire logic inside Redis:
+
+Client → Lua Script → Redis
+
+### Why Use It?
+
+- Prevents race conditions
+- Makes multiple Redis operations atomic
+- Reduces network round trips
+- Useful for check-and-update operations
+
+### Example
+
+Without Lua:
+
+```text
+Client A: GET stock → 1
+Client B: GET stock → 1
+
+Client A: SET stock → 0
+Client B: SET stock → 0
+
+Result: Both clients think they successfully bought the item
+
+With Lua:
+
+local stock = redis.call("GET", KEYS[1])
+
+if tonumber(stock) > 0 then
+    redis.call("DECR", KEYS[1])
+    return 1
+end
+
+return 0
+
+Redis executes the entire script atomically, so another command cannot interleave while the script is running.
+
+Common Use Cases
+Atomic counters
+Rate limiting
+Inventory/stock reservation
+Distributed locks
+Idempotency checks
+Conditional updates
+Token bucket algorithms
+Advantages
+Atomic execution
+Fewer network round trips
+Race-condition prevention
+Complex Redis operations can be combined
+Limitations
+Long-running scripts block Redis
+CPU-intensive scripts can affect other clients
+Script logic should be kept short
+Redis becomes responsible for application logic
+Interview One-Liner
+
+Lua scripting allows multiple Redis commands to execute atomically as one operation, preventing race conditions in check-and-update workflows.
