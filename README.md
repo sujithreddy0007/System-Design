@@ -17,6 +17,7 @@
     # Change data capture
     # Kafka
     # Rabbit MQ
+    # Apache Flinch
 ### 6. Algorithms
     # Consistent Hashing
     # Gossip Protocol

@@ -1,0 +1,54 @@
+# Apache Flink
+
+### Definition
+
+Apache Flink is a **distributed stream-processing framework** designed to process large amounts of data in real time.
+
+It can process both:
+- Unbounded streams → continuous real-time data
+- Bounded streams → batch data
+
+### How It Works
+
+```text
+Kafka / Database / API
+        ↓
+      Flink
+        ↓
+ Transform / Aggregate / Join
+        ↓
+ Kafka / Database / Elasticsearch
+
+Flink processes data as a continuous stream and maintains state when needed.
+
+Key Features
+Real-time stream processing
+Stateful processing
+Event-time processing
+Windowing
+Exactly-once state consistency
+Fault tolerance using checkpoints
+Distributed and horizontally scalable
+Common Use Cases
+Real-time analytics
+Fraud detection
+Recommendation systems
+Monitoring and alerting
+IoT processing
+Log/event processing
+Real-time aggregations
+Flink vs Spark
+Flink	Spark
+Stream-first	Originally batch-first
+True continuous streaming	Micro-batch / streaming support
+Low latency	Generally higher latency
+Strong event-time processing	Supports event-time processing
+Stateful streaming is a core feature	Supports stateful streaming
+Example
+Kafka
+  ↓
+Flink
+  ↓
+Count purchases per user
+  ↓
+Redis / Elasticsearch
